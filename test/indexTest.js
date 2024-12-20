@@ -1,4 +1,4 @@
-require ( './helpers.js' );
+require('./helpers.js');
 
 const fs = require("fs");
 const path = require("path");
@@ -26,7 +26,7 @@ describe("css/style.css", () => {
     const rule = findRule(css.cssRules, "body");
     const hint = "Incorrect background property for body";
     expect(rule.style["background"], hint).to.eq("pink");
-  });
+});
 
   it("corrects the 'h1' font-size declaration", () => {
     const rule = findRule(css.cssRules, "h1");
